@@ -1,12 +1,16 @@
 {
   "name": "lt-react-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react kit",
   "main": "index.js",
   "scripts": {
     "build": "webpack --env=build --progress --colors",
     "start": "webpack-dev-server --env=dev --progress --colors --open",
     "lint": "eslint --ext .js,.jsx src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:longtoken/lt-react-kit.git"
   },
   "author": "longtoken",
   "license": "ISC",
