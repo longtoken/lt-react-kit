@@ -22,18 +22,9 @@ let AJAX = {
     } else {
       let msg = err && err.body;
       let status = err && err.response && err.response.status;
-      if (!loginCallback) {
-        loginCallback = (data) => {
-          if (data && data.access_token) {
-            localStorage.setItem('uid', data.access_token);
-            localStorage.setItem('linkToken', data.access_token);
-          }
-          location.reload();
-        };
-      }
       switch (status) {
         case 401:
-          global.CRFLogin && global.CRFLogin.initialize(loginCallback);
+          Toast.info('请重新登录！');
           break;
         case 403:
           Toast.info('您没有权限做此操作，请返回重试！');
