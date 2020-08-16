@@ -1,0 +1,8 @@
+{
+  "name": "ts-react-kit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/longtoken/lt-react-kit.git",
+  "author": "keefer <2278587662@qq.com>",
+  "license": "MIT"
+}
